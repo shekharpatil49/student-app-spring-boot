@@ -42,8 +42,8 @@ public class StudentController {
 		return studentService.updateStudent(student);
 	}
 	@DeleteMapping("/student/{rollno}")
-	public String deleteStudent(@PathVariable int rollno) {
-		return studentService.deleteStudent(rollno);
+	public void deleteStudent(@PathVariable int rollno) {
+		studentService.deleteStudent(rollno);
 	}
 
 }

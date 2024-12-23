@@ -10,6 +10,6 @@ public interface StudentService {
 	public List<Student> getStudent(int rollNo);
 	public List<Student> getAllStudents();
 	public Student updateStudent(Student student);
-	public String deleteStudent(int rollNo);
+	public void deleteStudent(int rollNo);
 	
 }

@@ -35,10 +35,9 @@ public class StudentServiceImpl implements StudentService{
 		return studentDao.save(student);
 	}
 	@Override
-	public String deleteStudent(int rollno) {
+	public void deleteStudent(int rollno) {
 		List<Student> student = studentDao.findByRollNo(rollno);
 		studentDao.delete(student.get(0));
-		return "Student record deleted";
 	}
 
 }
